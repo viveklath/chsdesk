@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  society_name: MyString
+  society_address_line1: MyString
+  society_address_line2: MyString
+  society_city: MyString
+  society_pincode: MyString
+  society_state: MyString
+
+two:
+  society_name: MyString
+  society_address_line1: MyString
+  society_address_line2: MyString
+  society_city: MyString
+  society_pincode: MyString
+  society_state: MyString

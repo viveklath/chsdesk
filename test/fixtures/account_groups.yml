@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  primary_account_group: MyString
+  account_group_name: MyString
+  sub_account_group: MyString
+  is_sub_ledger: MyString
+  use_gross_profit: MyString
+
+two:
+  primary_account_group: MyString
+  account_group_name: MyString
+  sub_account_group: MyString
+  is_sub_ledger: MyString
+  use_gross_profit: MyString

@@ -1,0 +1,49 @@
+<%= form_for(@account_transaction) do |f| %>
+  <% if @account_transaction.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@account_transaction.errors.count, "error") %> prohibited this account_transaction from being saved:</h2>
+
+      <ul>
+      <% @account_transaction.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :transaction_date %><br />
+    <%= f.date_select :transaction_date %>
+  </div>
+  <div class="field">
+    <%= f.label :debit_ledger_code %><br />
+    <%= f.text_field :debit_ledger_code %>
+  </div>
+  <div class="field">
+    <%= f.label :debit_amount %><br />
+    <%= f.number_field :debit_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :credit_ledger_code %><br />
+    <%= f.text_field :credit_ledger_code %>
+  </div>
+  <div class="field">
+    <%= f.label :credit_amount %><br />
+    <%= f.number_field :credit_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :transaction_narration %><br />
+    <%= f.text_field :transaction_narration %>
+  </div>
+  <div class="field">
+    <%= f.label :ledger_balance %><br />
+    <%= f.number_field :ledger_balance %>
+  </div>
+  <div class="field">
+    <%= f.label :transaction_type %><br />
+    <%= f.text_field :transaction_type %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

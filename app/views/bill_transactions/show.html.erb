@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Bill:</b>
+  <%= @bill_transaction.bill_id %>
+</p>
+
+<p>
+  <b>Transaction date:</b>
+  <%= @bill_transaction.transaction_date %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @bill_transaction.email %>
+</p>
+
+<p>
+  <b>Pdf:</b>
+  <%= @bill_transaction.pdf %>
+</p>
+
+<p>
+  <b>User member:</b>
+  <%= @bill_transaction.user_member_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_bill_transaction_path(@bill_transaction) %> |
+<%= link_to 'Back', bill_transactions_path %>

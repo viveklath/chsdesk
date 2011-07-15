@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  unit_id: 1
+  bill_number: MyString
+  from_date: 2011-07-15
+  to_date: 2011-07-15
+  bill_generation_date: 2011-07-15
+  current_bill_charges: 9.99
+  penalty_interest: 9.99
+  discount_amount: 9.99
+  total_bill_amount: 9.99
+
+two:
+  unit_id: 1
+  bill_number: MyString
+  from_date: 2011-07-15
+  to_date: 2011-07-15
+  bill_generation_date: 2011-07-15
+  current_bill_charges: 9.99
+  penalty_interest: 9.99
+  discount_amount: 9.99
+  total_bill_amount: 9.99

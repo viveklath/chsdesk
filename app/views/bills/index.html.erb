@@ -1,0 +1,39 @@
+<h1>Listing bills</h1>
+
+<table>
+  <tr>
+    <th>Unit</th>
+    <th>Bill number</th>
+    <th>From date</th>
+    <th>To date</th>
+    <th>Bill generation date</th>
+    <th>Current bill charges</th>
+    <th>Penalty interest</th>
+    <th>Discount amount</th>
+    <th>Total bill amount</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bills.each do |bill| %>
+  <tr>
+    <td><%= bill.unit_id %></td>
+    <td><%= bill.bill_number %></td>
+    <td><%= bill.from_date %></td>
+    <td><%= bill.to_date %></td>
+    <td><%= bill.bill_generation_date %></td>
+    <td><%= bill.current_bill_charges %></td>
+    <td><%= bill.penalty_interest %></td>
+    <td><%= bill.discount_amount %></td>
+    <td><%= bill.total_bill_amount %></td>
+    <td><%= link_to 'Show', bill %></td>
+    <td><%= link_to 'Edit', edit_bill_path(bill) %></td>
+    <td><%= link_to 'Destroy', bill, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bill', new_bill_path %>

@@ -1,4 +1,24 @@
 Chsdesk::Application.routes.draw do
+  resources :societies
+
+  resources :transaction_type_masters
+
+  resources :ledger_details
+
+  resources :committees
+
+  resources :bills
+
+  resources :bill_transactions
+
+  resources :bill_setups
+
+  resources :bill_details
+
+  resources :account_transactions
+
+  resources :account_groups
+
 #  get "password_resets/new"
   resources :password_resets
   resources :members

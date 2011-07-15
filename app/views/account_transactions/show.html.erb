@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Transaction date:</b>
+  <%= @account_transaction.transaction_date %>
+</p>
+
+<p>
+  <b>Debit ledger code:</b>
+  <%= @account_transaction.debit_ledger_code %>
+</p>
+
+<p>
+  <b>Debit amount:</b>
+  <%= @account_transaction.debit_amount %>
+</p>
+
+<p>
+  <b>Credit ledger code:</b>
+  <%= @account_transaction.credit_ledger_code %>
+</p>
+
+<p>
+  <b>Credit amount:</b>
+  <%= @account_transaction.credit_amount %>
+</p>
+
+<p>
+  <b>Transaction narration:</b>
+  <%= @account_transaction.transaction_narration %>
+</p>
+
+<p>
+  <b>Ledger balance:</b>
+  <%= @account_transaction.ledger_balance %>
+</p>
+
+<p>
+  <b>Transaction type:</b>
+  <%= @account_transaction.transaction_type %>
+</p>
+
+
+<%= link_to 'Edit', edit_account_transaction_path(@account_transaction) %> |
+<%= link_to 'Back', account_transactions_path %>

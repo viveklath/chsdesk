@@ -1,0 +1,35 @@
+<h1>Listing bill_setups</h1>
+
+<table>
+  <tr>
+    <th>Society</th>
+    <th>Head name</th>
+    <th>Rate sqft month</th>
+    <th>Rate unit month</th>
+    <th>Service tax pct</th>
+    <th>Days to discount</th>
+    <th>Discount pct</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bill_setups.each do |bill_setup| %>
+  <tr>
+    <td><%= bill_setup.society_id %></td>
+    <td><%= bill_setup.head_name %></td>
+    <td><%= bill_setup.rate_sqft_month %></td>
+    <td><%= bill_setup.rate_unit_month %></td>
+    <td><%= bill_setup.service_tax_pct %></td>
+    <td><%= bill_setup.days_to_discount %></td>
+    <td><%= bill_setup.discount_pct %></td>
+    <td><%= link_to 'Show', bill_setup %></td>
+    <td><%= link_to 'Edit', edit_bill_setup_path(bill_setup) %></td>
+    <td><%= link_to 'Destroy', bill_setup, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bill setup', new_bill_setup_path %>

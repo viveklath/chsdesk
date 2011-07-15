@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  society_id: 1
+  head_name: MyString
+  rate_sqft_month: 9.99
+  rate_unit_month: 9.99
+  service_tax_pct: 9.99
+  days_to_discount: 1
+  discount_pct: 9.99
+
+two:
+  society_id: 1
+  head_name: MyString
+  rate_sqft_month: 9.99
+  rate_unit_month: 9.99
+  service_tax_pct: 9.99
+  days_to_discount: 1
+  discount_pct: 9.99

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Transaction type:</b>
+  <%= @transaction_type_master.transaction_type %>
+</p>
+
+<p>
+  <b>Transaction type prefix:</b>
+  <%= @transaction_type_master.transaction_type_prefix %>
+</p>
+
+
+<%= link_to 'Edit', edit_transaction_type_master_path(@transaction_type_master) %> |
+<%= link_to 'Back', transaction_type_masters_path %>

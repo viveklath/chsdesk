@@ -1,0 +1,49 @@
+<%= form_for(@bill_detail) do |f| %>
+  <% if @bill_detail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bill_detail.errors.count, "error") %> prohibited this bill_detail from being saved:</h2>
+
+      <ul>
+      <% @bill_detail.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :bill_head_id %><br />
+    <%= f.number_field :bill_head_id %>
+  </div>
+  <div class="field">
+    <%= f.label :bill_id %><br />
+    <%= f.number_field :bill_id %>
+  </div>
+  <div class="field">
+    <%= f.label :head %><br />
+    <%= f.text_field :head %>
+  </div>
+  <div class="field">
+    <%= f.label :net_amount %><br />
+    <%= f.text_field :net_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :mandatory %><br />
+    <%= f.check_box :mandatory %>
+  </div>
+  <div class="field">
+    <%= f.label :is_sub_head %><br />
+    <%= f.check_box :is_sub_head %>
+  </div>
+  <div class="field">
+    <%= f.label :service_tax %><br />
+    <%= f.text_field :service_tax %>
+  </div>
+  <div class="field">
+    <%= f.label :gross_amount %><br />
+    <%= f.text_field :gross_amount %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

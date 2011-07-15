@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  account_group_code: 1
+  ledger_name: MyString
+  opening_balance: MyString
+
+two:
+  account_group_code: 1
+  ledger_name: MyString
+  opening_balance: MyString

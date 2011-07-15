@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Society:</b>
+  <%= @bill_setup.society_id %>
+</p>
+
+<p>
+  <b>Head name:</b>
+  <%= @bill_setup.head_name %>
+</p>
+
+<p>
+  <b>Rate sqft month:</b>
+  <%= @bill_setup.rate_sqft_month %>
+</p>
+
+<p>
+  <b>Rate unit month:</b>
+  <%= @bill_setup.rate_unit_month %>
+</p>
+
+<p>
+  <b>Service tax pct:</b>
+  <%= @bill_setup.service_tax_pct %>
+</p>
+
+<p>
+  <b>Days to discount:</b>
+  <%= @bill_setup.days_to_discount %>
+</p>
+
+<p>
+  <b>Discount pct:</b>
+  <%= @bill_setup.discount_pct %>
+</p>
+
+
+<%= link_to 'Edit', edit_bill_setup_path(@bill_setup) %> |
+<%= link_to 'Back', bill_setups_path %>

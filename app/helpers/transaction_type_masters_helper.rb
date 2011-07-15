@@ -1,0 +1,2 @@
+module TransactionTypeMastersHelper
+end

@@ -1,0 +1,45 @@
+<%= form_for(@bill_setup) do |f| %>
+  <% if @bill_setup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bill_setup.errors.count, "error") %> prohibited this bill_setup from being saved:</h2>
+
+      <ul>
+      <% @bill_setup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :society_id %><br />
+    <%= f.number_field :society_id %>
+  </div>
+  <div class="field">
+    <%= f.label :head_name %><br />
+    <%= f.text_field :head_name %>
+  </div>
+  <div class="field">
+    <%= f.label :rate_sqft_month %><br />
+    <%= f.text_field :rate_sqft_month %>
+  </div>
+  <div class="field">
+    <%= f.label :rate_unit_month %><br />
+    <%= f.text_field :rate_unit_month %>
+  </div>
+  <div class="field">
+    <%= f.label :service_tax_pct %><br />
+    <%= f.text_field :service_tax_pct %>
+  </div>
+  <div class="field">
+    <%= f.label :days_to_discount %><br />
+    <%= f.number_field :days_to_discount %>
+  </div>
+  <div class="field">
+    <%= f.label :discount_pct %><br />
+    <%= f.text_field :discount_pct %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

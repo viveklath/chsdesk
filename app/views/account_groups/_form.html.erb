@@ -1,0 +1,37 @@
+<%= form_for(@account_group) do |f| %>
+  <% if @account_group.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@account_group.errors.count, "error") %> prohibited this account_group from being saved:</h2>
+
+      <ul>
+      <% @account_group.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :primary_account_group %><br />
+    <%= f.text_field :primary_account_group %>
+  </div>
+  <div class="field">
+    <%= f.label :account_group_name %><br />
+    <%= f.text_field :account_group_name %>
+  </div>
+  <div class="field">
+    <%= f.label :sub_account_group %><br />
+    <%= f.text_field :sub_account_group %>
+  </div>
+  <div class="field">
+    <%= f.label :is_sub_ledger %><br />
+    <%= f.text_field :is_sub_ledger %>
+  </div>
+  <div class="field">
+    <%= f.label :use_gross_profit %><br />
+    <%= f.text_field :use_gross_profit %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

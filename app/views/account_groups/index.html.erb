@@ -1,0 +1,31 @@
+<h1>Listing account_groups</h1>
+
+<table>
+  <tr>
+    <th>Primary account group</th>
+    <th>Account group name</th>
+    <th>Sub account group</th>
+    <th>Is sub ledger</th>
+    <th>Use gross profit</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @account_groups.each do |account_group| %>
+  <tr>
+    <td><%= account_group.primary_account_group %></td>
+    <td><%= account_group.account_group_name %></td>
+    <td><%= account_group.sub_account_group %></td>
+    <td><%= account_group.is_sub_ledger %></td>
+    <td><%= account_group.use_gross_profit %></td>
+    <td><%= link_to 'Show', account_group %></td>
+    <td><%= link_to 'Edit', edit_account_group_path(account_group) %></td>
+    <td><%= link_to 'Destroy', account_group, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Account group', new_account_group_path %>

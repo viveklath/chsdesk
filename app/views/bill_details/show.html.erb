@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Bill head:</b>
+  <%= @bill_detail.bill_head_id %>
+</p>
+
+<p>
+  <b>Bill:</b>
+  <%= @bill_detail.bill_id %>
+</p>
+
+<p>
+  <b>Head:</b>
+  <%= @bill_detail.head %>
+</p>
+
+<p>
+  <b>Net amount:</b>
+  <%= @bill_detail.net_amount %>
+</p>
+
+<p>
+  <b>Mandatory:</b>
+  <%= @bill_detail.mandatory %>
+</p>
+
+<p>
+  <b>Is sub head:</b>
+  <%= @bill_detail.is_sub_head %>
+</p>
+
+<p>
+  <b>Service tax:</b>
+  <%= @bill_detail.service_tax %>
+</p>
+
+<p>
+  <b>Gross amount:</b>
+  <%= @bill_detail.gross_amount %>
+</p>
+
+
+<%= link_to 'Edit', edit_bill_detail_path(@bill_detail) %> |
+<%= link_to 'Back', bill_details_path %>

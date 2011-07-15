@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Unit:</b>
+  <%= @bill.unit_id %>
+</p>
+
+<p>
+  <b>Bill number:</b>
+  <%= @bill.bill_number %>
+</p>
+
+<p>
+  <b>From date:</b>
+  <%= @bill.from_date %>
+</p>
+
+<p>
+  <b>To date:</b>
+  <%= @bill.to_date %>
+</p>
+
+<p>
+  <b>Bill generation date:</b>
+  <%= @bill.bill_generation_date %>
+</p>
+
+<p>
+  <b>Current bill charges:</b>
+  <%= @bill.current_bill_charges %>
+</p>
+
+<p>
+  <b>Penalty interest:</b>
+  <%= @bill.penalty_interest %>
+</p>
+
+<p>
+  <b>Discount amount:</b>
+  <%= @bill.discount_amount %>
+</p>
+
+<p>
+  <b>Total bill amount:</b>
+  <%= @bill.total_bill_amount %>
+</p>
+
+
+<%= link_to 'Edit', edit_bill_path(@bill) %> |
+<%= link_to 'Back', bills_path %>

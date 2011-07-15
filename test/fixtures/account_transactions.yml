@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  transaction_date: 2011-07-15
+  debit_ledger_code: MyString
+  debit_amount: 1
+  credit_ledger_code: MyString
+  credit_amount: 1
+  transaction_narration: MyString
+  ledger_balance: 1
+  transaction_type: MyString
+
+two:
+  transaction_date: 2011-07-15
+  debit_ledger_code: MyString
+  debit_amount: 1
+  credit_ledger_code: MyString
+  credit_amount: 1
+  transaction_narration: MyString
+  ledger_balance: 1
+  transaction_type: MyString

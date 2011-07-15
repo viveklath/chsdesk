@@ -1,0 +1,37 @@
+<h1>Listing account_transactions</h1>
+
+<table>
+  <tr>
+    <th>Transaction date</th>
+    <th>Debit ledger code</th>
+    <th>Debit amount</th>
+    <th>Credit ledger code</th>
+    <th>Credit amount</th>
+    <th>Transaction narration</th>
+    <th>Ledger balance</th>
+    <th>Transaction type</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @account_transactions.each do |account_transaction| %>
+  <tr>
+    <td><%= account_transaction.transaction_date %></td>
+    <td><%= account_transaction.debit_ledger_code %></td>
+    <td><%= account_transaction.debit_amount %></td>
+    <td><%= account_transaction.credit_ledger_code %></td>
+    <td><%= account_transaction.credit_amount %></td>
+    <td><%= account_transaction.transaction_narration %></td>
+    <td><%= account_transaction.ledger_balance %></td>
+    <td><%= account_transaction.transaction_type %></td>
+    <td><%= link_to 'Show', account_transaction %></td>
+    <td><%= link_to 'Edit', edit_account_transaction_path(account_transaction) %></td>
+    <td><%= link_to 'Destroy', account_transaction, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Account transaction', new_account_transaction_path %>

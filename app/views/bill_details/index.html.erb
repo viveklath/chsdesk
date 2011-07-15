@@ -1,0 +1,37 @@
+<h1>Listing bill_details</h1>
+
+<table>
+  <tr>
+    <th>Bill head</th>
+    <th>Bill</th>
+    <th>Head</th>
+    <th>Net amount</th>
+    <th>Mandatory</th>
+    <th>Is sub head</th>
+    <th>Service tax</th>
+    <th>Gross amount</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bill_details.each do |bill_detail| %>
+  <tr>
+    <td><%= bill_detail.bill_head_id %></td>
+    <td><%= bill_detail.bill_id %></td>
+    <td><%= bill_detail.head %></td>
+    <td><%= bill_detail.net_amount %></td>
+    <td><%= bill_detail.mandatory %></td>
+    <td><%= bill_detail.is_sub_head %></td>
+    <td><%= bill_detail.service_tax %></td>
+    <td><%= bill_detail.gross_amount %></td>
+    <td><%= link_to 'Show', bill_detail %></td>
+    <td><%= link_to 'Edit', edit_bill_detail_path(bill_detail) %></td>
+    <td><%= link_to 'Destroy', bill_detail, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bill detail', new_bill_detail_path %>

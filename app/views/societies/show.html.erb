@@ -1,0 +1,71 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Society name:</b>
+  <%= @society.society_name %>
+</p>
+
+<p>
+  <b>Society address line1:</b>
+  <%= @society.society_address_line1 %>
+</p>
+
+<p>
+  <b>Society address line2:</b>
+  <%= @society.society_address_line2 %>
+</p>
+
+<p>
+  <b>Society city:</b>
+  <%= @society.society_city %>
+</p>
+
+<p>
+  <b>Society pincode:</b>
+  <%= @society.society_pincode %>
+</p>
+
+<p>
+  <b>Society state:</b>
+  <%= @society.society_state %>
+</p>
+<p>
+  <b>society_country:</b>
+  <%= @society.society_country %>
+</p>
+<p>
+  <b>govt_address_line:</b>
+  <%= @society.govt_address_line %>
+</p>
+<p>
+  <b>govt_address_line2:</b>
+  <%= @society.govt_address_line2 %>
+</p>
+<p>
+  <b>govt_address_city:</b>
+  <%= @society.govt_address_city %>
+</p>
+<p>
+  <b>govt_address_pincode:</b>
+  <%= @society.govt_address_pincode %>
+</p>
+<p>
+  <b>govt_address_plotnumber:</b>
+  <%= @society.govt_address_plotnumber %>
+</p>
+<p>
+  <b>regsitration_number:</b>
+  <%= @society.regsitration_number %>
+</p>
+<p>
+  <b>govt_ward_number:</b>
+  <%= @society.govt_ward_number %>
+</p>
+<p>
+  <b>number_of_flats:</b>
+  <%= @society.number_of_flats %>
+</p>
+
+
+<%= link_to 'Edit', edit_society_path(@society) %> |
+<%= link_to 'Back', societies_path %>

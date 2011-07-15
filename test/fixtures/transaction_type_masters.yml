@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  transaction_type: MyString
+  transaction_type_prefix: MyString
+
+two:
+  transaction_type: MyString
+  transaction_type_prefix: MyString

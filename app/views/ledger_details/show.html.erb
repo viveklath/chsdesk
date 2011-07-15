@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Account group code:</b>
+  <%= @ledger_detail.account_group_code %>
+</p>
+
+<p>
+  <b>Ledger name:</b>
+  <%= @ledger_detail.ledger_name %>
+</p>
+
+<p>
+  <b>Opening balance:</b>
+  <%= @ledger_detail.opening_balance %>
+</p>
+
+
+<%= link_to 'Edit', edit_ledger_detail_path(@ledger_detail) %> |
+<%= link_to 'Back', ledger_details_path %>

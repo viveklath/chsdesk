@@ -1,0 +1,53 @@
+<%= form_for(@bill) do |f| %>
+  <% if @bill.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bill.errors.count, "error") %> prohibited this bill from being saved:</h2>
+
+      <ul>
+      <% @bill.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :unit_id %><br />
+    <%= f.number_field :unit_id %>
+  </div>
+  <div class="field">
+    <%= f.label :bill_number %><br />
+    <%= f.text_field :bill_number %>
+  </div>
+  <div class="field">
+    <%= f.label :from_date %><br />
+    <%= f.date_select :from_date %>
+  </div>
+  <div class="field">
+    <%= f.label :to_date %><br />
+    <%= f.date_select :to_date %>
+  </div>
+  <div class="field">
+    <%= f.label :bill_generation_date %><br />
+    <%= f.date_select :bill_generation_date %>
+  </div>
+  <div class="field">
+    <%= f.label :current_bill_charges %><br />
+    <%= f.text_field :current_bill_charges %>
+  </div>
+  <div class="field">
+    <%= f.label :penalty_interest %><br />
+    <%= f.text_field :penalty_interest %>
+  </div>
+  <div class="field">
+    <%= f.label :discount_amount %><br />
+    <%= f.text_field :discount_amount %>
+  </div>
+  <div class="field">
+    <%= f.label :total_bill_amount %><br />
+    <%= f.text_field :total_bill_amount %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module LedgerDetailsHelper
+end

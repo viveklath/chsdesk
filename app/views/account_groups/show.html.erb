@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Primary account group:</b>
+  <%= @account_group.primary_account_group %>
+</p>
+
+<p>
+  <b>Account group name:</b>
+  <%= @account_group.account_group_name %>
+</p>
+
+<p>
+  <b>Sub account group:</b>
+  <%= @account_group.sub_account_group %>
+</p>
+
+<p>
+  <b>Is sub ledger:</b>
+  <%= @account_group.is_sub_ledger %>
+</p>
+
+<p>
+  <b>Use gross profit:</b>
+  <%= @account_group.use_gross_profit %>
+</p>
+
+
+<%= link_to 'Edit', edit_account_group_path(@account_group) %> |
+<%= link_to 'Back', account_groups_path %>
