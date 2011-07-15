@@ -1,0 +1,57 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  unit_id: 1
+  first_name: MyString
+  last_name: MyString
+  suffix: MyString
+  date_of_birth: 2011-07-14
+  home_phone: MyString
+  mobile_phone: MyString
+  work_phone: MyString
+  email_id: MyString
+  gender: MyString
+  member_photo: 
+  photo_id: 
+  primary_address_line1: MyString
+  primary_address_line2: MyString
+  primary_address_city: MyString
+  primary_address_pincode: MyString
+  primary_address_state: MyString
+  primary_address_country: MyString
+  is_owner: false
+  live_here: false
+  email_bills: false
+  sms_bills: false
+  sms_reciept: false
+  noc_charges: false
+  parking_charges: false
+  is_mcmember: false
+
+two:
+  unit_id: 1
+  first_name: MyString
+  last_name: MyString
+  suffix: MyString
+  date_of_birth: 2011-07-14
+  home_phone: MyString
+  mobile_phone: MyString
+  work_phone: MyString
+  email_id: MyString
+  gender: MyString
+  member_photo: 
+  photo_id: 
+  primary_address_line1: MyString
+  primary_address_line2: MyString
+  primary_address_city: MyString
+  primary_address_pincode: MyString
+  primary_address_state: MyString
+  primary_address_country: MyString
+  is_owner: false
+  live_here: false
+  email_bills: false
+  sms_bills: false
+  sms_reciept: false
+  noc_charges: false
+  parking_charges: false
+  is_mcmember: false

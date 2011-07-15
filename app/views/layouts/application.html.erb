@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chsdesk</title>
+   <%= stylesheet_link_tag   "token-input" %>
+  <%= javascript_include_tag "application", "jquery.tokeninput" %>
+  
+  <%= csrf_meta_tags %>
+ 
+   <%= render 'layouts/stylesheets' %>
+
+</head>
+<body>
+<div class="container round">
+	    <div id="header" class="span-24 ">
+	      <%= render 'layouts/header' %>
+	    </div>
+    <hr /> 
+	    <div id="subheader" class="span-24 ">
+		 <%= render 'layouts/header_menu' %>
+	    </div>
+    <hr />  
+         <div class="span-8 colborde">
+	        <h4 class="prepend-3">Upload a Book</h4>
+	        <p>
+	        This is actually one Blueprint grid nested another Blueprint grid.
+	        </p>      
+	     </div>
+  
+		    <div class="span-8 colborder">
+	        <h4 class="prepend-3">Write a Review</h4>
+	        <p>
+	        This is actually one Blueprint grid nested another Blueprint grid.
+	        </p>      
+	      </div>
+	     <div class="span-7 last">
+	        <h4 class="prepend-3">Write a Review</h4>
+	        <p>
+	        This is actually one Blueprint grid nested another Blueprint grid.
+	        </p>      
+	      </div>
+
+    <div class="span-19 colborder" id="content">
+       <p>
+    	 <% flash.each do |key, value| %>
+	          <%= content_tag(:div, value, :class => "flash #{key}") %>
+	         <% end %>
+	        <%= yield %>
+       </p>
+    </div>
+
+    <div class="span-4 last" id="sidebar">
+      <%= render 'layouts/sidebar' %>
+    </div>
+
+    <div id="footer" class="span-24 last">
+       <%= render 'layouts/footer' %>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+to be changed in production
+
+1. config.action_mailer.default_url_options = { :host => "localhost:3000" }
+--------changes as per the site server ---config/evinroments/development.rb
+2. force ssl to be acyivated 
+3. Send confirmation email of password reset

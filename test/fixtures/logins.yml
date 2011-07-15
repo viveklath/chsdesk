@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/Fixtures.html
+
+one:
+  member_id: 1
+  email: MyString
+  password_digest: MyString
+  role: MyString
+
+two:
+  member_id: 1
+  email: MyString
+  password_digest: MyString
+  role: MyString

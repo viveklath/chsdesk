@@ -1,0 +1,73 @@
+<h1>Listing members</h1>
+
+<table>
+  <tr>
+    <th>Unit</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Suffix</th>
+    <th>Date of birth</th>
+    <th>Home phone</th>
+    <th>Mobile phone</th>
+    <th>Work phone</th>
+    <th>Email</th>
+    <th>Gender</th>
+    <th>Member photo</th>
+    <th>Photo</th>
+    <th>Primary address line1</th>
+    <th>Primary address line2</th>
+    <th>Primary address city</th>
+    <th>Primary address pincode</th>
+    <th>Primary address state</th>
+    <th>Primary address country</th>
+    <th>Is owner</th>
+    <th>Live here</th>
+    <th>Email bills</th>
+    <th>Sms bills</th>
+    <th>Sms reciept</th>
+    <th>Noc charges</th>
+    <th>Parking charges</th>
+    <th>Is mcmember</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @members.each do |member| %>
+  <tr>
+    <td><%= member.unit_id %></td>
+    <td><%= member.first_name %></td>
+    <td><%= member.last_name %></td>
+    <td><%= member.suffix %></td>
+    <td><%= member.date_of_birth %></td>
+    <td><%= member.home_phone %></td>
+    <td><%= member.mobile_phone %></td>
+    <td><%= member.work_phone %></td>
+    <td><%= member.email_id %></td>
+    <td><%= member.gender %></td>
+    <td><%= member.member_photo %></td>
+    <td><%= member.photo_id %></td>
+    <td><%= member.primary_address_line1 %></td>
+    <td><%= member.primary_address_line2 %></td>
+    <td><%= member.primary_address_city %></td>
+    <td><%= member.primary_address_pincode %></td>
+    <td><%= member.primary_address_state %></td>
+    <td><%= member.primary_address_country %></td>
+    <td><%= member.is_owner %></td>
+    <td><%= member.live_here %></td>
+    <td><%= member.email_bills %></td>
+    <td><%= member.sms_bills %></td>
+    <td><%= member.sms_reciept %></td>
+    <td><%= member.noc_charges %></td>
+    <td><%= member.parking_charges %></td>
+    <td><%= member.is_mcmember %></td>
+    <td><%= link_to 'Show', member %></td>
+    <td><%= link_to 'Edit', edit_member_path(member) %></td>
+    <td><%= link_to 'Destroy', member, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Member', new_member_path %>
