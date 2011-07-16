@@ -44,7 +44,7 @@ body {
 	color: #DFF4FF
 }
 .span-4 {
-	width: 185px;
+	width: 185px
 }
 h3 {
 	color: #DFF4FF
@@ -103,12 +103,6 @@ nav {
   background-color:#eefeff;
 }
 
-nav {
-
-  
-  
-}
-
 nav ul {
   margin: 0;
   padding: 0;
@@ -138,7 +132,7 @@ nav ul li a:hover {
 .menu {
   float: left;
   padding: 0 0.9em;
-  font-size: 120%;
+  font-size: 110%;
   background-color:#eefeff;
 }
 
