@@ -1,33 +1,25 @@
 Chsdesk::Application.routes.draw do
   resources :societies
-
   resources :transaction_type_masters
-
   resources :ledger_details
-
   resources :committees
-
   resources :bills
-
   resources :bill_transactions
-
   resources :bill_setups
-
   resources :bill_details
-
   resources :account_transactions
-
   resources :account_groups
-
 #  get "password_resets/new"
   resources :password_resets
   resources :members
   resources :sessions
   resources :logins
+  
   get "logout" => "sessions#destroy", :as => "logout"
   get "login" => "sessions#new", :as => "login"
   get "signup" => "logins#new", :as => "signup"
   root :to => "home#index"
+  
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
   match '/help',    :to => 'pages#help'

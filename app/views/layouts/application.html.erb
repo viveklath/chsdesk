@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Chsdesk</title>
-   <%= stylesheet_link_tag   "token-input" %>
+   
   <%= javascript_include_tag "application", "jquery.tokeninput" %>
   
   <%= csrf_meta_tags %>
@@ -13,15 +13,15 @@
 <body>
 <div class="container round">
 	    <div id="header" class="span-24 ">
-	      <%= render 'layouts/header' %>
+	      <%= render 'header' %>
 	    </div>
     <hr /> 
 	    <div id="subheader" class="span-24 ">
-		 <%= render 'layouts/header_menu' %>
+		 <%= render 'header_menu' %>
 	    </div>
     <hr />  
-         <div class="span-8 colborde">
-         <div class="box"> 
+         <div class="span-8 colborder">
+         <div class="box round"> 
 	        <h4 class="prepend-3">Upload a Book</h4>
 	        <p>
 	        This is actually one Blueprint grid .
@@ -29,7 +29,7 @@
 	     </div>
   		</div>
 		    <div class="span-8 colborder">
-		    	<div class="box">
+		    	<div class="box round">
 	        <h4 class="prepend-3">Write a Review</h4>
 	        <p>
 	        This is actually one Blueprint grid .
@@ -37,14 +37,14 @@
 	      </div>
 	      </div>
 	     <div class="span-7 last">
-	     	<div class="box">
+	     	<div class="box round">
 	        <h4 class="prepend-3">Write a Review</h4>
 	        <p>
 	        This is actually one Blueprint grid .
 	        </p>      
 	      </div>
 			</div>
-    <div class="span-19 colborder" id="content">
+    <div class="span-19 round" id="content">
        <p>
     	 <% flash.each do |key, value| %>
 	          <%= content_tag(:div, value, :class => "flash #{key}") %>
@@ -54,11 +54,11 @@
     </div>
 
     <div class="span-4 last" id="sidebar">
-      <%= render 'layouts/sidebar' %>
+      <%= render 'sidebar' %>
     </div>
 
     <div id="footer" class="span-24 last">
-       <%= render 'layouts/footer' %>
+       <%= render 'footer' %>
     </div>
 </div>
 
