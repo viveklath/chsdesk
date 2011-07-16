@@ -13,11 +13,11 @@ Chsdesk::Application.routes.draw do
   resources :password_resets
   resources :members
   resources :sessions
-  resources :logins
+  resources :users
   
   get "logout" => "sessions#destroy", :as => "logout"
-  get "login" => "sessions#new", :as => "login"
-  get "signup" => "logins#new", :as => "signup"
+  get "user" => "sessions#new", :as => "user"
+  get "signup" => "users#new", :as => "signup"
   root :to => "home#index"
   
   match '/contact', :to => 'pages#contact'

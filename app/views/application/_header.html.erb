@@ -1,11 +1,11 @@
 
 <nav class="round medium">
- <% if current_login %>
-        <%= current_login.email %>.
+ <% if current_user %>
+        <%= current_user.email %>.
         <%= link_to "| Log out |", logout_path %>
       <% else %>
         <%= link_to "| Sign up |", signup_path %> or
-        <%= link_to "| log in |", login_path %>
+        <%= link_to "| log in |", user_path %>
       <% end %>
  <%= link_to "Home  |", root_path %>
  <%= link_to "Help  |", help_path %>

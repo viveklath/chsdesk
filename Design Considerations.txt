@@ -1,0 +1,2 @@
+After each login
+=> store member id, society id, unit_id and member type in  session variables
