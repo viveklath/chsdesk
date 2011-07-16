@@ -1,22 +1,14 @@
-<h1>Listing societies</h1>
+<h2>Listing societies</h2>
 
 <table>
   <tr>
-    <th>Society name</th>
-    <th>Society address line1</th>
-    <th>Society address line2</th>
-    <th>Society city</th>
-    <th>Society pincode</th>
-    <th>Society state</th>
-    <th>society_country</th>
-    <th>govt_address_line1</th>
-    <th>govt_address_line2</th>
-    <th>govt_address_city</th>
-    <th>govt_address_pincode</th>
-    <th>govt_address_plotnumber</th>
-    <th>regsitration_number</th>
-    <th>govt_ward_number</th>
-    <th>number_of_flats</th>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Suburb</th>
+    <th>City</th>
+    <th>Zip</th>
+    <th>State</th>
+    <th>Total Flats</th>
     <th></th>
     <th></th>
     <th></th>
@@ -30,23 +22,14 @@
     <td><%= society.society_city %></td>
     <td><%= society.society_pincode %></td>
     <td><%= society.society_state %></td>
-    <td><%= society.society_country %></td>
-    <td><%= society.govt_address_line %></td>
-    <td><%= society.govt_address_line2 %></td>
-    <td><%= society.govt_address_city %></td>
-    <td><%= society.govt_address_pincode %></td>
-    <td><%= society.govt_address_plotnumber %></td>
-    <td><%= society.regsitration_number %></td>
-    <td><%= society.govt_ward_number %></td>
     <td><%= society.number_of_flats %></td>
      
     <td><%= link_to 'Show', society %></td>
     <td><%= link_to 'Edit', edit_society_path(society) %></td>
-    <td><%= link_to 'Destroy', society, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'X', society, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
-
 <br />
 
 <%= link_to 'New Society', new_society_path %>

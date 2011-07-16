@@ -8,7 +8,6 @@ changes to be made as per the site server ---config/evinroments/development.rb
 4. In Member table last_signin changed in the table from default NULL=false to NULL=true
 
 
-
 Git command
 ----------work in branch and merge with master---------
 git checkout -b modify-README-- * identifies which branch we’re currently on

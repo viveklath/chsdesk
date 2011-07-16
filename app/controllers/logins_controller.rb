@@ -6,7 +6,7 @@ class LoginsController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: @logins }
+      format.json { render :json => @logins }
     end
   end
 
@@ -17,7 +17,7 @@ class LoginsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.json { render json: @login }
+      format.json { render :json => @login }
     end
   end
 
@@ -50,11 +50,11 @@ class LoginsController < ApplicationController
 
     respond_to do |format|
       if @login.update_attributes(params[:login])
-        format.html { redirect_to @login, notice: 'Login was successfully updated.' }
+        format.html { redirect_to @login, :notice => 'Login was successfully updated.' }
         format.json { head :ok }
       else
-        format.html { render action: "edit" }
-        format.json { render json: @login.errors, status: :unprocessable_entity }
+        format.html { render :action => "edit" }
+        format.json { render :json => @login.errors, :status => :unprocessable_entity }
       end
     end
   end

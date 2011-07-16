@@ -27,9 +27,17 @@ Chsdesk::Application.routes.draw do
   match '/master',  :to => 'societies#index'
   match '/assignmember',  :to => 'members#index'
 
- 
-#  get "secret" => "secret#index"
+ match '/transaction_type_masters',  :to => 'transaction_type_masters#index'
+ match '/ledger_details',  :to => 'ledger_details#index'
+ match '/committees',  :to => 'committees#index'
+ match '/bills',  :to => 'bills#index'
+ match '/bill_transactions',  :to => 'bill_transactions#index'
+ match '/bill_setups',  :to => 'bill_setups#index'
+ match '/bill_details',  :to => 'bill_details#index'
+ match '/account_transactions',  :to => 'account_transactions#index'
+ match '/account_groups',  :to => 'account_groups#index'
 
+#  get "secret" => "secret#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
