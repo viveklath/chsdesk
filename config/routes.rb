@@ -38,7 +38,6 @@ Chsdesk::Application.routes.draw do
  match '/account_groups',  :to => 'account_groups#index'
 
 #  get "secret" => "secret#index"
-
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
