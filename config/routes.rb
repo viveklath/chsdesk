@@ -16,9 +16,10 @@ Chsdesk::Application.routes.draw do
   resources :users
   
   get "logout" => "sessions#destroy", :as => "logout"
-  get "user" => "sessions#new", :as => "user"
+  get "login" => "sessions#new", :as => "login"
   get "signup" => "users#new", :as => "signup"
   root :to => "home#index"
+
   
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'

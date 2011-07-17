@@ -14,6 +14,8 @@ gem 'coffee-script'
 gem 'uglifier'
 gem 'declarative_authorization', '0.5.3'
 gem 'jquery-rails'
+gem 'client_side_validations'
+gem 'kaminari'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
